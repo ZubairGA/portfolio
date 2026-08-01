@@ -67,232 +67,208 @@
   transform-origin: bottom left;
 }
 
-
-
-
 /*================ SKILLS =================*/
 
-.skills-section{
+.skills-section {
+  min-height: 100vh;
 
-    min-height:100vh;
+  background: #262525;
 
-    background:#262525;
-
-    padding:8rem 8%;
-
+  padding: 8rem 8%;
 }
 
-.skills-heading{
+.skills-heading {
+  text-align: center;
 
-    text-align:center;
-
-    margin-bottom:4rem;
-
+  margin-bottom: 4rem;
 }
 
-.skills-heading p:first-child{
+.skills-heading p:first-child {
+  color: #35acf1;
 
-    color:#35acf1;
+  letter-spacing: 3px;
 
-    letter-spacing:3px;
-
-    margin-bottom:.8rem;
-
+  margin-bottom: 0.8rem;
 }
 
-.skills-heading h1{
+.skills-heading h1 {
+  font-size: 3.5rem;
 
-    font-size:3.5rem;
+  color: #fff;
 
-    color:#fff;
-
-    margin-bottom:1rem;
-
+  margin-bottom: 1rem;
 }
 
-.skills-heading h1 span{
-
-    color:#35acf1;
-
+.skills-heading h1 span {
+  color: #35acf1;
 }
 
-.skills-subtitle{
+.skills-subtitle {
+  color: #d3d3d3;
 
-    color:#d3d3d3;
+  max-width: 700px;
 
-    max-width:700px;
+  margin: auto;
 
-    margin:auto;
-
-    line-height:1.8;
-
+  line-height: 1.8;
 }
 
-.skill-category{
-
-    margin-top:4rem;
-
+.skill-category {
+  margin-top: 4rem;
 }
 
-.skill-category h2{
+.skill-category h2 {
+  color: #5db9ee;
 
-    color:#5db9ee;
+  margin-bottom: 2rem;
 
-    margin-bottom:2rem;
-
-    font-size:2rem;
-
+  font-size: 2rem;
 }
 
-.skills-grid{
+.skills-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-    gap:2rem;
-
+  gap: 2rem;
 }
 
-.skill-card{
+.skill-card {
+  background: #2d2d2d;
 
-    background:#2d2d2d;
+  padding: 2.5rem;
 
-    padding:2.5rem;
+  border-radius: 18px;
 
-    border-radius:18px;
+  text-align: center;
 
-    text-align:center;
+  border: 1px solid rgba(93, 185, 238, 0.15);
 
-    border:1px solid rgba(93,185,238,.15);
-
-    transition:.4s;
-
+  transition: 0.4s;
 }
 
-.skill-card:hover{
+.skill-card:hover {
+  transform: translateY(-10px);
 
-    transform:translateY(-10px);
+  border-color: #5db9ee;
 
-    border-color:#5db9ee;
-
-    box-shadow:0 0 25px rgba(53,172,241,.25);
-
+  box-shadow: 0 0 25px rgba(53, 172, 241, 0.25);
 }
 
-.skill-card i{
+.skill-card i {
+  font-size: 3rem;
 
-    font-size:3rem;
+  color: #35acf1;
 
-    color:#35acf1;
-
-    margin-bottom:1rem;
-
+  margin-bottom: 1rem;
 }
 
-.skill-card h3{
+.skill-card h3 {
+  color: #fff;
 
-    color:#fff;
-
-    margin-bottom:.6rem;
-
+  margin-bottom: 0.6rem;
 }
 
-.skill-card p{
-
-    color:#cfcfcf;
-
+.skill-card p {
+  color: #cfcfcf;
 }
 
-.learning-section{
+.learning-section {
+  margin-top: 5rem;
 
-    margin-top:5rem;
-
-    text-align:center;
-
+  text-align: center;
 }
 
-.learning-section h2{
+.learning-section h2 {
+  color: #5db9ee;
 
-    color:#5db9ee;
+  margin-bottom: 2rem;
 
-    margin-bottom:2rem;
-
-    font-size:2rem;
-
+  font-size: 2rem;
 }
 
-.learning-tags{
+.learning-tags {
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  flex-wrap: wrap;
 
-    flex-wrap:wrap;
-
-    gap:1rem;
-
+  gap: 1rem;
 }
 
-.learning-tags span{
+.learning-tags span {
+  padding: 0.8rem 1.4rem;
 
-    padding:.8rem 1.4rem;
+  background: #2d2d2d;
 
-    background:#2d2d2d;
+  color: #fff;
 
-    color:#fff;
+  border-radius: 30px;
 
-    border-radius:30px;
+  border: 1px solid rgba(93, 185, 238, 0.2);
 
-    border:1px solid rgba(93,185,238,.2);
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-.learning-tags span:hover{
+.learning-tags span:hover {
+  background: #35acf1;
 
-    background:#35acf1;
-
-    color:#262525;
-
+  color: #262525;
 }
-
-
-
 
 /* =======================================================
    GLOBAL RESPONSIVE OVERRIDE (Fixes Fixed Pixels)
    ======================================================= */
 @media (max-width: 768px) {
-    /* Force ALL major container layouts to fit within the phone screen */
-    div, section, header, footer, main, nav {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-        float: none !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
+  /* Force ALL major container layouts to fit within the phone screen */
+  div,
+  section,
+  header,
+  footer,
+  main,
+  nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
-    /* Force all flexbox containers to stack vertically instead of side-by-side */
-    *[style*="display: flex"], .container, .row, .grid, [class*="container"], [class*="wrapper"] {
-        flex-direction: column !important;
-        display: flex !important;
-    }
+  /* Force all flexbox containers to stack vertically instead of side-by-side */
+  *[style*="display: flex"],
+  .container,
+  .row,
+  .grid,
+  [class*="container"],
+  [class*="wrapper"] {
+    flex-direction: column !important;
+    display: flex !important;
+  }
 
-    /* Prevent text elements from pushing past the mobile screen margins */
-    h1, h2, h3, h4, h5, h6, p, span, a {
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        white-space: normal !important;
-    }
+  /* Prevent text elements from pushing past the mobile screen margins */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
 
-    /* Ensure all images scale down cleanly without breaking out of their boxes */
-    img, video, picture {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        object-fit: cover !important;
-    }
+  /* Ensure all images scale down cleanly without breaking out of their boxes */
+  img,
+  video,
+  picture {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
 }
