@@ -372,3 +372,41 @@ body {
 
   font-size: 1rem;
 }
+
+
+
+/* =======================================================
+   GLOBAL RESPONSIVE OVERRIDE (Fixes Fixed Pixels)
+   ======================================================= */
+@media (max-width: 768px) {
+    /* Force ALL major container layouts to fit within the phone screen */
+    div, section, header, footer, main, nav {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        float: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Force all flexbox containers to stack vertically instead of side-by-side */
+    *[style*="display: flex"], .container, .row, .grid, [class*="container"], [class*="wrapper"] {
+        flex-direction: column !important;
+        display: flex !important;
+    }
+
+    /* Prevent text elements from pushing past the mobile screen margins */
+    h1, h2, h3, h4, h5, h6, p, span, a {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    /* Ensure all images scale down cleanly without breaking out of their boxes */
+    img, video, picture {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+    }
+}
