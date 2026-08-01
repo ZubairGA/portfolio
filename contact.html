@@ -129,22 +129,30 @@
 
         <!--================ RIGHT SIDE ================-->
 
-        <div class="contact-form">
-          <form action="#">
-            <input type="text" placeholder="Full Name" required />
+       <div class="contact-form">
+          <!-- FIX: Changed the action link to the correct submit endpoint -->
+          <form action="https://web3forms.com" method="POST">
+            
+            <!-- REMINDER: Replace YOUR_SECRET_KEY_HERE with the real key from your email -->
+            <input type="hidden" name="access_key" value="4ce3c2d3-286f-4f97-a672-e3aa22ff5edc">
+            
+            <input type="text" name="Name" placeholder="Full Name" required />
 
-            <input type="email" placeholder="Email Address" required />
+            <input type="email" name="Email" placeholder="Email Address" required />
 
-            <input type="text" placeholder="Subject" required />
+            <input type="text" name="Subject" placeholder="Subject" required />
 
-            <textarea
+            <textarea name="Message"
               rows="8"
               placeholder="Write your message..."
               required></textarea>
 
             <button type="submit">Send Message</button>
           </form>
-        </div>
+</div>
+
+
+
       </div>
     </section>
   </body>
