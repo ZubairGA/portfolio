@@ -32,8 +32,6 @@ body {
 
   background: rgba(38, 37, 37, 0.95);
 
-  backdrop-filter: blur(10px);
-
   z-index: 1000;
 }
 
