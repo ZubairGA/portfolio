@@ -136,6 +136,34 @@ body {
   font-weight: 600;
 }
 
+.milestone-container {
+  margin-top: 24px;
+  padding: 20px;
+  border-left: 4px solid #4f46e5;
+  background: rgba(79, 70, 229, 0.04);
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.milestone-container h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #d4d4d4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.milestone-container p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #d4d4d4;
+}
+.milestone-container p a {
+  color: #5db9ee;
+}
+
 .about-btns {
   display: flex;
 
