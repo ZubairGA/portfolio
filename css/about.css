@@ -398,6 +398,16 @@ body {
   font-size: 1rem;
 }
 
+.about-text .text-secondary {
+  margin-top: 12px;
+  color: #d4d4d4;
+}
+
+.cutomize-styled-p span {
+  color: #fff;
+  font-weight: 600;
+}
+
 /* =======================================================
    GLOBAL RESPONSIVE OVERRIDE (Fixes Fixed Pixels)
    ======================================================= */
